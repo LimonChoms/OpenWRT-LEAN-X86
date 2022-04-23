@@ -18,4 +18,7 @@
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 # 添加OpenClash
-git clone https://github.com/vernesong/OpenClash package/OpenClash
+git clone https://github.com/vernesong/OpenClash package/OpenClash.
+
+rm -rf package/lean/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
